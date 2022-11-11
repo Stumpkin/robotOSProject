@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BookList</string>
+    <string name="add">Add</string>
+    <string name="search">Search By Author</string>
+    <string name="delete">Delete</string>
+    <string name="year">Year</string>
+    <string name="author">Author</string>
+    <string name="title">Title</string>
+    <string name="isbn">ISBN</string>
+    <string name="update">Update</string>
+    <string name="exercise1">Exercise 1</string>
+    <string name="exercise2">Exercise 2</string>
+</resources>
