@@ -86,11 +86,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // If there is no data, add five records as an example.
         if (bookList.size() <= 0) {
             Book[] defaultBook = new Book[5];
-            defaultBook[0] = new Book("Alice", "Cool Java", "12-345", 2022);
-            defaultBook[1] = new Book("Bob", "C and C++", "22-222", 1975);
-            defaultBook[2] = new Book("Chris", "Python", "77-777", 2020);
-            defaultBook[3] = new Book("Eric", "Android and iOS", "33-333", 2019);
-            defaultBook[4] = new Book("Alice", "Hot Java", "12-333", 1999);
+            defaultBook[0] = new Book("Alice", "Absolute Java", "12-345", 2022, 0.25);
+            defaultBook[1] = new Book("Bob", "Absolute Java 2", "22-222", 1975, 0.50);
+            defaultBook[2] = new Book("Chris", "Python", "77-777", 2020, 1.0);
+            defaultBook[3] = new Book("Eric", "Intro to CS", "33-333", 2019, 0.25);
+            defaultBook[4] = new Book("Alice", "Hot Java", "12-333", 1999, 0.05);
             db.getBookDao().insert(defaultBook);
 
             // Read the inserted default book data to display them on the screen

@@ -12,18 +12,22 @@ public class Book {
     private String title;
     private String isbn;
     private int year;
+    private double price;
+    //private String priceFormatted;
 
     public Book ()
     {
+        price = 0;
         // default constructor - no initialization.
     }
 
-    public Book (String author, String title, String isbn, int year)
+    public Book (String author, String title, String isbn, int year, double price)
     {
         this.author = author;
         this.title = title;
         this.isbn = isbn;
         this.year = year;
+        this.price = price;
     }
 
     public int getId() {
@@ -46,6 +50,8 @@ public class Book {
         return year;
     }
 
+    public double getPrice() { return price; }
+
     public void setId(int id) {
         this.id = id;
     }
@@ -65,5 +71,7 @@ public class Book {
     public void setYear(int year) {
         this.year = year;
     }
+
+    public void setPrice(double price) { this.price = price; }
 }
 
