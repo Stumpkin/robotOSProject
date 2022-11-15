@@ -1,3 +1,10 @@
+/**
+ * Title: BookDatabase.java
+ * Abstract: A implementation of a database for the books using a singleton design pattern
+ * Author: Jalen Banks
+ * ID: 1012
+ * Date of Completion: 11/13/22
+ */
 package edu.csumb.bank1435.myapplication;
 
 import android.content.Context;

@@ -1,3 +1,10 @@
+/**
+ * Title: BookDao.java
+ * Abstract: An interface where Dao uses auto generated functions to implement
+ * Author: Jalen Banks
+ * ID: 1012
+ * Date of Completion: 11/13/22
+ */
 package edu.csumb.bank1435.myapplication;
 
 import androidx.room.Dao;
@@ -16,17 +23,11 @@ public interface BookDao
     @Update
     void update(Book book);
 
-    @Query("SELECT * FROM Books WHERE author = :name  ORDER BY  isbn ASC")
-    List<Book> searchByName(String name);
-
-    @Query("SELECT * FROM Books WHERE isbn = :isbn")
-    List<Book> searchByIsbn(String isbn);
+    @Update
+    void update(List<Book> books);
 
     @Delete
     void delete(Book book);
-
-    @Query("DELETE FROM Books WHERE author = :name")
-    void deleteByName(String name);
 
     @Query("SELECT * FROM Books")
     List<Book> getAll();

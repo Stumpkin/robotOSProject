@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/mainLayout"
         android:layout_width="413dp"
         android:layout_height="596dp"
         android:layout_marginStart="1dp"
@@ -24,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Title"
+            android:hint="Book Title"
             android:inputType="textPersonName"
             android:minHeight="48dp" />
 
@@ -33,21 +34,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Hours"
+            android:hint="Rental Hours"
             android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/passwordText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
             android:minHeight="48dp" />
 
         <Button
             android:id="@+id/actionButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Rent" />
+            android:text="Serach" />
+
+        <Button
+            android:id="@+id/updateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="296dp"
             android:text="TextView"
+            android:textAlignment="center"
             android:textSize="20sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

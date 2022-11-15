@@ -1,3 +1,11 @@
+/**
+ * Title Book.java
+ * Abstract: Contains the book object and uses Entity and Primarykey for the database
+ *           Books currently contains a title, a price, and a string to format the price
+ * Author: Jalen Banks
+ * ID: 1012
+ * Date of Completion: 11/13/22
+ */
 package edu.csumb.bank1435.myapplication;
 
 import androidx.room.Entity;
@@ -10,10 +18,10 @@ public class Book
 {
     @PrimaryKey(autoGenerate = true)
     private int id;
-    private String author;
+    //private String author; commented out for now
     private String title;
-    private String isbn;
-    private int year;
+    //private String isbn; commented out for now
+    //private int year; commented out for now
     private double price;
     private String priceFormatted;
 
@@ -23,13 +31,13 @@ public class Book
         priceFormatted = "$0.00";
     }
 
-    public Book(String a, String t, String is, int y, double p)
+    public Book(String t, double p)
     {
         this.price = p;
-        this.author = a;
+        //this.author = a; commented out for now
         this.title = t;
-        this.isbn = is;
-        this.year = y;
+        //this.isbn = is; commented out for now
+        //this.year = y; commented out for now
         this.priceFormatted = setPriceFormat();
     }
 
@@ -42,21 +50,21 @@ public class Book
 
     public int getId() { return this.id; }
 
-    public String getAuthor() {
-        return this.author;
-    }
+//    public String getAuthor() {
+//        return this.author;
+//    } commented out for now
 
     public String getTitle() {
         return this.title;
     }
 
-    public String getIsbn() {
-        return this.isbn;
-    }
+//    public String getIsbn() { commented out for now
+//        return this.isbn;
+//    }
 
-    public int getYear() {
-        return this.year;
-    }
+//    public int getYear() { commented out for now
+//        return this.year;
+//    }
 
     public double getPrice() { return this.price; }
 
@@ -68,21 +76,21 @@ public class Book
         this.id = id;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
-    }
+//    public void setAuthor(String author) { commented out for now
+//        this.author = author;
+//    }
 
     public void setTitle(String title) {
         this.title = title;
     }
 
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
-    }
+//    public void setIsbn(String isbn) { commented out for now
+//        this.isbn = isbn;
+//    }
+//
+//    public void setYear(int year) { commented out for now
+//        this.year = year;
+//    }
 
-    public void setYear(int year) {
-        this.year = year;
-    }
-
-    public void setPrice(double price) { this.price = price; }
+    public void setPrice(double price) { this.price = price; this.priceFormatted = setPriceFormat(); }
 }
